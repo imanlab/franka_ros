@@ -27,7 +27,7 @@ Create a workspace, git clone the repo, catkin make the packges
 ```bash
 $ mkdir -p catkin_ws/src
 $ cd catkin_ws/src 
-$ git clone -b noetic-devel 
+$ git clone -b noetic-devel https://github.com/imanlab/franka_ros.git
 $ cd ..
 $ catkin_make 
 ```
