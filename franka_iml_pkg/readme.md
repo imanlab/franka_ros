@@ -5,6 +5,21 @@
 - Franka_ros (noetic devel) 
 - realsense2 
 
+
+### New User
+If you create a new user login in the lab PC. You will need to do the following steps (only one time). 
+
+```bash
+$ echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+$ source ~/.bashrc
+$ sudo addgroup realtime
+$ sudo usermod -a -G realtime $(whoami)
+```
+
+Restart the PC. 
+
+*These commands will add noetic to setup path, and give permission to this new user to use realtime kernel to interact with Franka Panda.*
+
 ### How to compile 
 
 Create a workspace, git clone the repo, catkin make the packges
